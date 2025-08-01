@@ -1,15 +1,7 @@
-import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import {
-	CheckCircle,
-	Phone,
-	Mail,
-	MessageCircle,
-	Facebook,
-	Check,
-	PhoneCall,
-} from "lucide-react";
+import { Check, Phone, PhoneCall } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
@@ -58,34 +50,40 @@ export default function Home() {
 
 							<div className="grid grid-cols-3 gap-4 py-6">
 								<div className="flex items-center gap-2">
-									<Image
-										src={"/spin.svg"}
-										width={20}
-										height={20}
-										alt=""
-									/>
+									<div className="bg-[#1A7F401A] size-8 shrink-0 rounded-full flex justify-center items-center">
+										<Image
+											src={"/spin.svg"}
+											width={20}
+											height={20}
+											alt=""
+										/>
+									</div>
 									<span className="text-sm text-gray-700">
 										Mehr Spin
 									</span>
 								</div>
 								<div className="flex items-center gap-2">
-									<Image
-										src={"/control.svg"}
-										width={20}
-										height={20}
-										alt=""
-									/>
+									<div className="bg-[#1A7F401A] size-8 shrink-0 rounded-full flex justify-center items-center">
+										<Image
+											src={"/control.svg"}
+											width={20}
+											height={20}
+											alt=""
+										/>
+									</div>
 									<span className="text-sm text-gray-700">
 										Mehr Kontrolle
 									</span>
 								</div>
 								<div className="flex items-center gap-2">
-									<Image
-										src={"/power.svg"}
-										width={20}
-										height={20}
-										alt=""
-									/>
+									<div className="bg-[#1A7F401A] size-8 shrink-0 rounded-full flex justify-center items-center">
+										<Image
+											src={"/power.svg"}
+											width={20}
+											height={20}
+											alt=""
+										/>
+									</div>
 									<span className="text-sm text-gray-700">
 										Mehr Power
 									</span>
@@ -275,7 +273,7 @@ export default function Home() {
 
 			{/* Contact Section */}
 			<section className="px-4">
-				<div className="container rounded-[25px] mx-auto bg-gray-50 flex gap-12 items-center justify-between lg:h-[428px] px-18 relative overflow-hidden">
+				<div className="container rounded-[25px] mx-auto bg-[#F4F9F5] shadow-none flex gap-12 items-center justify-between lg:h-[428px] px-18 relative overflow-hidden">
 					<Image
 						src={"/floating-racket.png"}
 						width={160}
@@ -324,7 +322,7 @@ export default function Home() {
 			</section>
 
 			{/* Footer */}
-			<footer className="bg-white py-12 border-t">
+			<footer className="bg-white py-12">
 				<div className="container mx-auto px-4">
 					<div className="text-center space-y-4">
 						<div className="text-lg font-semibold text-gray-800">
