@@ -8,23 +8,23 @@ export default function Home() {
 	return (
 		<div className="min-h-screen relative bg-white overflow-x-hidden wrap-break-word">
 			{/* Header */}
-			<header className="bg-transparent backdrop-blur-md shadow-sm fixed w-screen z-50">
+			<header className="w-screen">
 				<div className="container mx-auto px-4 py-4 flex justify-between items-center">
 					<div className="text-lg font-semibold text-gray-800">
 						Racket service
 					</div>
 					<Button className="bg-[#1A7F40] font-semibold md:h-[47px] hover:bg-green-700 text-white rounded-[13px] md:px-6">
-						<span className="hidden md:flex">Nimm Kontakt auf</span>
+						<span className="">Nimm Kontakt auf</span>
 						<Image src={"/contact.svg"} width={20} height={20} alt="" />
 					</Button>
 				</div>
 			</header>
 
 			{/* Hero Section */}
-			<section className="pt-[120px] py-12 lg:py-20 md:pt-0 lg:pt-0 px-2">
-				<div className="grid container md:px-10 lg:grid-cols-2 gap-0 md:gap-8 items-end">
+			<section className="pt-[80px] py-12 lg:py-0 md:pt-0 lg:pt-0 px-2">
+				<div className="grid container md:px-10 lg:grid-cols-2 gap-0 md:gap-8 items-center">
 					{/* max-w-[565px] */}
-					<div className="space-y-3 md:space-y-6 container px-3 md:ps-[50px] pb-[50]">
+					<div className="space-y-3 lg:pt-[100px] md:space-y-6 container px-3 md:ps-[50px] pb-[50]">
 						<h1 className="text-[32px] sm:text-[36px] md:text-[38px] font-bold text-gray-900 leading-tight">
 							<span className="block">Hol dir alles, was dein</span>
 							<span className="inline-flex flex-wrap items-end gap-2">
@@ -95,10 +95,8 @@ export default function Home() {
 						alt="Tennis player with racket"
 						width={300}
 						height={400}
-						className="mx-auto max-w-[100vw] relative md:h-screen w-auto rounded-lg md:translate-x-3 z-10 object-cover"
+						className="mx-auto max-w-[100vw] relative md:h-screen w-auto rounded-lg md:translate-x-14 md:-translate-y-20 z-10 object-cover"
 					/>
-					{/* <div className="bg-green-100 h-screen rounded-3xl p-8 relative overflow-hidden">
-						</div> */}
 				</div>
 			</section>
 
@@ -116,8 +114,8 @@ export default function Home() {
 							/>
 						</div>
 
-						<div className="space-y-6">
-							<h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900">
+						<div className="space-y-3">
+							<h2 className="text-2xl md:text-3xl font-bold text-gray-900">
 								Alles, was dein Schläger braucht – alles an einem Ort.
 								<Image
 									src={"/tennis.png"}
@@ -139,14 +137,7 @@ export default function Home() {
 							<div className="grid md:hidden lg:grid gap-4 mt-3">
 								<Card className="p-0 border-none shadow-none">
 									<CardContent className="p-0">
-										<div className="flex items-center gap-3">
-											<Image
-												src="/subsection-1-1.png"
-												alt="Tennis grip"
-												width={199}
-												height={144}
-												className="rounded-lg"
-											/>
+										<div className="flex justify-between items-center gap-3">
 											<div className="w-full md:max-w-[248px]">
 												<h3 className="font-semibold text-wrap wrap-break-word text-sm text-[#1A7F40] mb-1">
 													Schlägerbespannung
@@ -157,19 +148,26 @@ export default function Home() {
 													Spannung für optimale Leistung.
 												</p>
 											</div>
+											<Image
+												src="/subsection-1-1.png"
+												alt="Tennis grip"
+												width={199}
+												height={144}
+												className="rounded-lg size-[140px] md:w-[199px] md:h-[144px]  object-cover"
+											/>
 										</div>
 									</CardContent>
 								</Card>
 
 								<Card className="p-0 border-none shadow-none">
 									<CardContent className="p-0">
-										<div className="flex lg:flex-row-reverse lg:justify-start items-center gap-3">
+										<div className="flex justify-between items-center gap-3">
 											<Image
 												src="/subsection-1-2.png"
 												alt="Tennis grip"
 												width={199}
 												height={144}
-												className="rounded-lg"
+												className="rounded-lg size-[140px] md:w-[199px] md:h-[144px]  object-cover"
 											/>
 											<div className="w-full md:max-w-[248px]">
 												<h3 className="font-semibold text-sm text-[#1A7F40] mb-1">
@@ -244,7 +242,7 @@ export default function Home() {
 				<div className="container mx-auto px-4">
 					<div className="grid lg:grid-cols-2 gap-12 items-center">
 						<div className="space-y-6">
-							<h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900">
+							<h2 className="text-2xl md:text-3xl font-bold text-gray-900">
 								Warum solltest du uns in Betracht ziehen?
 							</h2>
 							<p className="text-gray-600 lg:text-lg">
@@ -254,7 +252,7 @@ export default function Home() {
 							</p>
 
 							<div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-								<div className="flex items-start gap-3 w-full  bg-[#1A7F400D] rounded-lg p-4">
+								<div className="flex items-start gap-3 w-full  bg-[#1A7F400D] rounded-[15px] p-4 min-h-[122px] border border-[#1A7F400D]">
 									<div className="bg-[#1A7F401A] size-8 shrink-0 rounded-full flex justify-center items-center">
 										<Check className="w-5 h-5 stroke-3 text-green-600 flex-shrink-0" />
 									</div>
@@ -269,7 +267,7 @@ export default function Home() {
 										</p>
 									</div>
 								</div>
-								<div className="flex items-start gap-3 w-full bg-[#1A7F400D] rounded-lg p-4">
+								<div className="flex items-start gap-3 w-full  bg-[#1A7F400D] rounded-[15px] p-4 min-h-[122px] border border-[#1A7F400D]">
 									<div className="bg-[#1A7F401A] size-8 shrink-0 rounded-full flex justify-center items-center">
 										<Check className="w-5 h-5 stroke-3 text-green-600 flex-shrink-0" />
 									</div>
@@ -284,7 +282,7 @@ export default function Home() {
 										</p>
 									</div>
 								</div>
-								<div className="flex items-start gap-3 w-full md:max-w-[330px] md:col-span-2 mx-auto bg-[#1A7F400D] rounded-lg p-4">
+								<div className="flex items-start gap-3 w-full md:max-w-[330px] md:col-span-2 mx-auto bg-[#1A7F400D] min-h-[122px] border border-[#1A7F400D] rounded-[15px] p-4">
 									<div className="bg-[#1A7F401A] size-8 shrink-0 rounded-full flex justify-center items-center">
 										<Check className="w-5 h-5 stroke-3 text-green-600 flex-shrink-0" />
 									</div>
@@ -317,18 +315,18 @@ export default function Home() {
 
 			{/* Contact Section */}
 			<section className="px-4">
-				<div className="container rounded-[25px] mx-auto bg-[#F4F9F5] shadow-none flex flex-col md:flex-row gap-6  md:gap-12 items-center justify-between h-full lg:max-h-[428px] px-5 py-8 md:px-18 relative overflow-hidden">
+				<div className="container rounded-[25px] mx-auto bg-[#F4F9F5] shadow-none flex flex-col md:flex-row gap-6  md:gap-12 items-center justify-between h-full lg:max-h-[428px] px-5 py-8 md:px-[40px] relative overflow-hidden">
 					<Image
 						src={"/floating-racket.png"}
-						width={160}
-						height={160}
+						width={150}
+						height={150}
 						alt=""
 						className="absolute top-0 left-0"
 					/>
 					<Image
 						src={"/floating-racket.png"}
-						width={160}
-						height={160}
+						width={150}
+						height={150}
 						alt=""
 						className="absolute bottom-10 -right-3 rotate-180 z-10"
 					/>
@@ -340,16 +338,16 @@ export default function Home() {
 					</div>
 
 					<div className="bg-white rounded-2xl p-5 lg:px-[68px] lg:py-[40] space-y-6 w-full max-w-[481px] flex flex-col justify-between z-20">
-						<h3 className="text-xl text-center md:text-start lg:text-2xl font-bold text-gray-900 mb-4">
+						<h3 className="text-xl text-center md:text-start lg:text-2xl font-bold text-gray-900 mb-4 lg:px-5">
 							Buche ein 10-minütiges Einführungsgespräch.
 						</h3>
 
-						<Button className="w-full bg-[#1A7F40] hover:bg-green-700 text-white h-[47px] rounded-lg mb-4">
+						<Button className="w-full bg-[#1A7F40] hover:bg-green-700 text-white h-[50px] rounded-[13px] mb-4">
 							Ruf uns an <Phone />
 						</Button>
 
-						<div className="flex items-center justify-start gap-2 text-sm text-gray-600">
-							<div className="flex items-center gap-2">
+						<div className="flex items-center justify-center w-full gap-2 text-sm text-gray-600 md:px-5">
+							<div className="flex items-center gap-2 lg:gap-3 w-fit">
 								<Image
 									src="/send.svg"
 									alt=""
@@ -365,14 +363,14 @@ export default function Home() {
 										dennis.engelmann@gmail.com
 									</span>
 								</div>
+								<Image
+									src="/arrow.png"
+									alt=""
+									width={50}
+									height={50}
+									className="size-5 hidden md:flex md:size-10"
+								/>
 							</div>
-							<Image
-								src="/arrow.png"
-								alt=""
-								width={50}
-								height={50}
-								className="size-5"
-							/>
 						</div>
 					</div>
 				</div>
