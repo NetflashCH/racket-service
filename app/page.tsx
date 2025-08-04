@@ -22,88 +22,83 @@ export default function Home() {
 
 			{/* Hero Section */}
 			<section className="pt-[120px] py-12 lg:py-20 md:pt-0 lg:pt-0 px-2">
-				<div className="">
-					<div className="grid lg:grid-cols-2 gap-0 md:gap-8 items-end">
-						{/* max-w-[565px] */}
-						<div className="space-y-3 md:space-y-6 container px-3 md:ps-[50px] pb-[50]">
-							<h1 className="text-[36px] font-bold text-gray-900 leading-tight flex flex-wrap">
-								<span>Hol dir alles, was dein</span>
-								<div className="flex items-end gap-2">
-									{/* <span>Schläger</span>
-									<div className="shrink-0">
-										<Image
-											src={"/inline-hero-racket.svg"}
-											width={94}
-											height={66}
-											alt=""
-											className="-translate-y-2 shrink-0"
-										/>
-									</div> */}
-									<span>braucht, schnell.</span>
-								</div>
-							</h1>
-							<p className="text-gray-600 text-base lg:text-lg">
-								Finde die passenden Saiten und das richtige Zubehör für
-								deinen Tennisschläger, die zu deinem individuellen
-								Spielstil passen.
-							</p>
+				<div className="grid container md:px-10 lg:grid-cols-2 gap-0 md:gap-8 items-end">
+					{/* max-w-[565px] */}
+					<div className="space-y-3 md:space-y-6 container px-3 md:ps-[50px] pb-[50]">
+						<h1 className="text-[32px] sm:text-[36px] md:text-[38px] font-bold text-gray-900 leading-tight">
+							<span className="block">Hol dir alles, was dein</span>
+							<span className="inline-flex flex-wrap items-end gap-2">
+								<span>Schläger</span>
+								<Image
+									src="/inline-hero-racket.svg"
+									width={70}
+									height={50}
+									alt=""
+									className="sm:-translate-y-2 shrink-0 sm:w-[80px] sm:h-[60px] lg:w-[90px] lg:h-[66px]"
+								/>
+								<span>braucht, schnell.</span>
+							</span>
+						</h1>
 
-							<div className="grid grid-cols-2 sm:grid-cols-3 gap-4 py-6">
-								<div className="flex items-center gap-2">
-									<div className="bg-[#1A7F401A] size-8 shrink-0 rounded-full flex justify-center items-center">
-										<Image
-											src={"/spin.svg"}
-											width={20}
-											height={20}
-											alt=""
-										/>
-									</div>
-									<span className="text-sm text-gray-700">
-										Mehr Spin
-									</span>
+						<p className="text-gray-600 text-base lg:text-lg">
+							Finde die passenden Saiten und das richtige Zubehör für
+							deinen Tennisschläger, die zu deinem individuellen
+							Spielstil passen.
+						</p>
+
+						<div className="grid grid-cols-2 sm:grid-cols-3 gap-4 py-6">
+							<div className="flex items-center gap-2">
+								<div className="bg-[#1A7F401A] size-8 shrink-0 rounded-full flex justify-center items-center">
+									<Image
+										src={"/spin.svg"}
+										width={20}
+										height={20}
+										alt=""
+									/>
 								</div>
-								<div className="flex items-center gap-2">
-									<div className="bg-[#1A7F401A] size-8 shrink-0 rounded-full flex justify-center items-center">
-										<Image
-											src={"/control.svg"}
-											width={20}
-											height={20}
-											alt=""
-										/>
-									</div>
-									<span className="text-sm text-gray-700">
-										Mehr Kontrolle
-									</span>
-								</div>
-								<div className="flex items-center gap-2">
-									<div className="bg-[#1A7F401A] size-8 shrink-0 rounded-full flex justify-center items-center">
-										<Image
-											src={"/power.svg"}
-											width={20}
-											height={20}
-											alt=""
-										/>
-									</div>
-									<span className="text-sm text-gray-700">
-										Mehr Power
-									</span>
-								</div>
+								<span className="text-sm text-gray-700">Mehr Spin</span>
 							</div>
-
-							<Button className="bg-[#1A1A1A] h-[47px] hover:bg-gray-800 text-white px-8 py-3 rounded-[13px]">
-								Schläger abstimmen
-							</Button>
+							<div className="flex items-center gap-2">
+								<div className="bg-[#1A7F401A] size-8 shrink-0 rounded-full flex justify-center items-center">
+									<Image
+										src={"/control.svg"}
+										width={20}
+										height={20}
+										alt=""
+									/>
+								</div>
+								<span className="text-sm text-gray-700">
+									Mehr Kontrolle
+								</span>
+							</div>
+							<div className="flex items-center gap-2">
+								<div className="bg-[#1A7F401A] size-8 shrink-0 rounded-full flex justify-center items-center">
+									<Image
+										src={"/power.svg"}
+										width={20}
+										height={20}
+										alt=""
+									/>
+								</div>
+								<span className="text-sm text-gray-700">
+									Mehr Power
+								</span>
+							</div>
 						</div>
-						{/* <Image
-							src="/hero.png"
-							alt="Tennis player with racket"
-							width={300}
-							height={400}
-							className="mx-auto max-w-[100vw] relative md:h-screen w-auto rounded-lg translate-x-3 z-10 object-cover"
-						/> */}
-						{/* <div className="bg-green-100 h-screen rounded-3xl p-8 relative overflow-hidden">
-						</div> */}
+
+						<Button className="bg-[#1A1A1A] h-[47px] hover:bg-gray-800 text-white px-8 py-3 rounded-[13px]">
+							Schläger abstimmen
+						</Button>
 					</div>
+					<Image
+						src="/hero.png"
+						alt="Tennis player with racket"
+						width={300}
+						height={400}
+						className="mx-auto max-w-[100vw] relative md:h-screen w-auto rounded-lg md:translate-x-3 z-10 object-cover"
+					/>
+					{/* <div className="bg-green-100 h-screen rounded-3xl p-8 relative overflow-hidden">
+						</div> */}
 				</div>
 			</section>
 
@@ -259,7 +254,7 @@ export default function Home() {
 							</p>
 
 							<div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-								<div className="flex items-start gap-3 w-full md:max-w-[270px] bg-[#1A7F400D] rounded-lg p-4">
+								<div className="flex items-start gap-3 w-full  bg-[#1A7F400D] rounded-lg p-4">
 									<div className="bg-[#1A7F401A] size-8 shrink-0 rounded-full flex justify-center items-center">
 										<Check className="w-5 h-5 stroke-3 text-green-600 flex-shrink-0" />
 									</div>
@@ -274,7 +269,7 @@ export default function Home() {
 										</p>
 									</div>
 								</div>
-								<div className="flex items-start gap-3 w-full md:max-w-[270px] bg-[#1A7F400D] rounded-lg p-4">
+								<div className="flex items-start gap-3 w-full bg-[#1A7F400D] rounded-lg p-4">
 									<div className="bg-[#1A7F401A] size-8 shrink-0 rounded-full flex justify-center items-center">
 										<Check className="w-5 h-5 stroke-3 text-green-600 flex-shrink-0" />
 									</div>
@@ -289,7 +284,7 @@ export default function Home() {
 										</p>
 									</div>
 								</div>
-								<div className="flex items-start gap-3 w-full md:max-w-[270px] md:col-span-2 mx-auto bg-[#1A7F400D] rounded-lg p-4">
+								<div className="flex items-start gap-3 w-full md:max-w-[330px] md:col-span-2 mx-auto bg-[#1A7F400D] rounded-lg p-4">
 									<div className="bg-[#1A7F401A] size-8 shrink-0 rounded-full flex justify-center items-center">
 										<Check className="w-5 h-5 stroke-3 text-green-600 flex-shrink-0" />
 									</div>
@@ -344,7 +339,7 @@ export default function Home() {
 						</h2>
 					</div>
 
-					<div className="bg-white rounded-2xl p-5 lg:px-[68px] lg:py-[40] space-y-4 w-full max-w-[481px] flex flex-col justify-between z-20">
+					<div className="bg-white rounded-2xl p-5 lg:px-[68px] lg:py-[40] space-y-6 w-full max-w-[481px] flex flex-col justify-between z-20">
 						<h3 className="text-xl text-center md:text-start lg:text-2xl font-bold text-gray-900 mb-4">
 							Buche ein 10-minütiges Einführungsgespräch.
 						</h3>
@@ -360,7 +355,7 @@ export default function Home() {
 									alt=""
 									width={50}
 									height={50}
-									className="size-6"
+									className="size-6 md:size-8"
 								/>
 								<div className="w-fit">
 									<span className="font-bold text-sm w-fit">
@@ -371,13 +366,13 @@ export default function Home() {
 									</span>
 								</div>
 							</div>
-							{/* <Image
+							<Image
 								src="/arrow.png"
 								alt=""
 								width={50}
 								height={50}
 								className="size-5"
-							/> */}
+							/>
 						</div>
 					</div>
 				</div>
