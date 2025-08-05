@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Check, Phone, PhoneCall } from "lucide-react";
+import { Check, PhoneCall } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -21,12 +21,12 @@ export default function Home() {
 			</header>
 
 			{/* Hero Section */}
-			<section className="pt-[80px] py-12 lg:py-0 md:pt-0 lg:pt-0 px-2">
-				<div className="grid container md:px-10 lg:grid-cols-2 gap-0 md:gap-8 items-center">
+			<section className="pt-[80px] py-12 lg:py-0 md:pt-0 lg:pt-0 px-4">
+				<div className="grid container mx-auto lg:px-10 md:grid-cols-2 gap-0 md:gap-8 items-start">
 					{/* max-w-[565px] */}
-					<div className="space-y-3 lg:pt-[100px] md:space-y-6 container px-3 md:ps-[50px] pb-[50]">
-						<h1 className="text-[32px] sm:text-[36px] md:text-[38px] font-bold text-gray-900 leading-tight">
-							<span className="block">Hol dir alles, was dein</span>
+					<div className="space-y-3 md:pt-[50px] lg:pt-[150px] md:space-y-6 container  pb-[50]">
+						<h1 className="text-[32px] sm:text-[34px] md:text-[32px] lg:text-[36px] xl:text-[38px] font-bold text-gray-900 leading-tight">
+							<span className="flex">Hol dir alles, was dein</span>
 							<span className="inline-flex flex-wrap items-end gap-2">
 								<span>Schläger</span>
 								<Image
@@ -40,7 +40,7 @@ export default function Home() {
 							</span>
 						</h1>
 
-						<p className="text-gray-600 text-base lg:text-lg">
+						<p className="text-black text-base lg:text-lg">
 							Finde die passenden Saiten und das richtige Zubehör für
 							deinen Tennisschläger, die zu deinem individuellen
 							Spielstil passen.
@@ -51,23 +51,25 @@ export default function Home() {
 								<div className="bg-[#1A7F401A] size-8 shrink-0 rounded-full flex justify-center items-center">
 									<Image
 										src={"/spin.svg"}
-										width={20}
-										height={20}
+										width={22}
+										height={22}
 										alt=""
 									/>
 								</div>
-								<span className="text-sm text-gray-700">Mehr Spin</span>
+								<span className="text-sm font-bold text-[#1E1E1E]">
+									Mehr Spin
+								</span>
 							</div>
 							<div className="flex items-center gap-2">
 								<div className="bg-[#1A7F401A] size-8 shrink-0 rounded-full flex justify-center items-center">
 									<Image
 										src={"/control.svg"}
-										width={20}
-										height={20}
+										width={25}
+										height={25}
 										alt=""
 									/>
 								</div>
-								<span className="text-sm text-gray-700">
+								<span className="text-sm font-bold text-[#1E1E1E]">
 									Mehr Kontrolle
 								</span>
 							</div>
@@ -80,7 +82,7 @@ export default function Home() {
 										alt=""
 									/>
 								</div>
-								<span className="text-sm text-gray-700">
+								<span className="text-sm font-bold text-[#1E1E1E]">
 									Mehr Power
 								</span>
 							</div>
@@ -95,14 +97,14 @@ export default function Home() {
 						alt="Tennis player with racket"
 						width={300}
 						height={400}
-						className="mx-auto max-w-[100vw] relative md:h-screen w-auto rounded-lg md:translate-x-14 md:-translate-y-20 z-10 object-cover"
+						className="mx-auto relative lg:h-screen w-auto rounded-lg z-10 object-cover  lg:translate-x-14 lg:-translate-y-20 lg:max-w-[100vw]"
 					/>
 				</div>
 			</section>
 
 			{/* Services Section */}
 			<section className="py-16">
-				<div className="container mx-auto px-4">
+				<div className="container mx-auto px-4 lg:px-10">
 					<div className="grid md:grid-cols-2 gap-6 lg:gap-12 items-center">
 						<div className="relative">
 							<Image
@@ -115,7 +117,7 @@ export default function Home() {
 						</div>
 
 						<div className="space-y-3">
-							<h2 className="text-2xl md:text-3xl font-bold text-gray-900">
+							<h2 className="text-2xl md:text-3xl font-bold text-[#1E1E1E]">
 								Alles, was dein Schläger braucht – alles an einem Ort.
 								<Image
 									src={"/tennis.png"}
@@ -125,7 +127,7 @@ export default function Home() {
 									className="inline size-8 -translate-y-1"
 								/>
 							</h2>
-							<p className="text-gray-600 lg:text-lg">
+							<p className="text-black lg:text-lg">
 								Hier ist, was wir anbieten, damit dein Schläger bis zum
 								Wochenende spielfertig ist und du ihn wieder liebst.
 							</p>
@@ -142,7 +144,7 @@ export default function Home() {
 												<h3 className="font-semibold text-wrap wrap-break-word text-sm text-[#1A7F40] mb-1">
 													Schlägerbespannung
 												</h3>
-												<p className="text-[12px] sm:text-sm text-gray-600">
+												<p className="text-[12px] sm:text-sm text-black">
 													Mit hochwertigen Saiten, schneller
 													Bearbeitung und individuell angepasster
 													Spannung für optimale Leistung.
@@ -173,7 +175,7 @@ export default function Home() {
 												<h3 className="font-semibold text-sm text-[#1A7F40] mb-1">
 													Griffe & Tenniszubehör
 												</h3>
-												<p className="text-[12px] sm:text-sm text-gray-600">
+												<p className="text-[12px] sm:text-sm text-black">
 													Lass deine Overgrips für mehr Komfort und
 													Kontrolle austauschen und statte dich mit
 													Zubehör wie Dämpfern und Griffen aus.
@@ -239,10 +241,10 @@ export default function Home() {
 
 			{/* Why Choose Us Section */}
 			<section className="py-16 bg-white">
-				<div className="container mx-auto px-4">
+				<div className="container mx-auto px-4 lg:px-10">
 					<div className="grid lg:grid-cols-2 gap-12 items-center">
 						<div className="space-y-6">
-							<h2 className="text-2xl md:text-3xl font-bold text-gray-900">
+							<h2 className="text-2xl md:text-3xl font-bold text-black">
 								Warum solltest du uns in Betracht ziehen?
 							</h2>
 							<p className="text-gray-600 lg:text-lg">
@@ -260,7 +262,7 @@ export default function Home() {
 										<h3 className="font-semibold text-[#1E1E1E]">
 											Schnelle Bearbeitung
 										</h3>
-										<p className="text-xs text-gray-600">
+										<p className="text-xs text-[#1E1E1E]">
 											Der ultimative Schlägerservice für TC
 											Bernkastel-Kues, VfL Bernkastel und
 											Tennisvereine.
@@ -275,7 +277,7 @@ export default function Home() {
 										<h3 className="font-semibold text-[#1E1E1E]">
 											Persönlicher Service
 										</h3>
-										<p className="text-xs text-gray-600">
+										<p className="text-xs text-black">
 											Professionelle und persönliche Beratung mit
 											individueller Saitenempfehlung abgestimmt auf
 											deinen Spielstil.
@@ -290,7 +292,7 @@ export default function Home() {
 										<h3 className="font-semibold text-[#1E1E1E]">
 											Vom Club anerkannte Expertise
 										</h3>
-										<p className="text-xs text-gray-600">
+										<p className="text-xs text-[#1E1E1E]">
 											Der offizielle Schlägerservice für TC
 											Bernkastel-Kues, VfL Bernkastel und
 											Tennisvereine.
@@ -300,7 +302,7 @@ export default function Home() {
 							</div>
 						</div>
 
-						<div className="relative">
+						<div className="relative flex justify-end">
 							<Image
 								src="/section2.png"
 								alt="Professional tennis player"
@@ -314,7 +316,7 @@ export default function Home() {
 			</section>
 
 			{/* Contact Section */}
-			<section className="px-4">
+			<section className="px-4 lg:px-10 container mx-auto">
 				<div className="container rounded-[25px] mx-auto bg-[#F4F9F5] shadow-none flex flex-col md:flex-row gap-6  md:gap-12 items-center justify-between h-full lg:max-h-[428px] px-5 py-8 md:px-[40px] relative overflow-hidden">
 					<Image
 						src={"/floating-racket.png"}
@@ -338,12 +340,12 @@ export default function Home() {
 					</div>
 
 					<div className="bg-white rounded-2xl p-5 lg:px-[68px] lg:py-[40] space-y-6 w-full max-w-[481px] flex flex-col justify-between z-20">
-						<h3 className="text-xl text-center md:text-start lg:text-2xl font-bold text-gray-900 mb-4 lg:px-5">
+						<h3 className="text-xl text-center md:text-start lg:text-2xl font-bold text-black mb-4 lg:px-5">
 							Buche ein 10-minütiges Einführungsgespräch.
 						</h3>
 
 						<Button className="w-full bg-[#1A7F40] hover:bg-green-700 text-white h-[50px] rounded-[13px] mb-4">
-							Ruf uns an <Phone />
+							Ruf uns an <PhoneCall />
 						</Button>
 
 						<div className="flex items-center justify-center w-full gap-2 text-sm text-gray-600 md:px-5">
@@ -356,10 +358,10 @@ export default function Home() {
 									className="size-6 md:size-8"
 								/>
 								<div className="w-fit">
-									<span className="font-bold text-sm w-fit">
+									<span className="font-bold text-sm w-fit text-black">
 										Bevorzugst du lieber E-Mail?
 									</span>
-									<span className="w-fit">
+									<span className="w-fit text-[#1E1E1E]">
 										dennis.engelmann@gmail.com
 									</span>
 								</div>
