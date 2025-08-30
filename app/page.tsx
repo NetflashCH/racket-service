@@ -11,7 +11,7 @@ export default function Home() {
 			<header className="w-screen">
 				<div className="container mx-auto px-4 py-4 flex justify-between items-center">
 					<div className="text-lg font-semibold text-gray-800">
-						Racket service
+						Racket Service
 					</div>
 					<Button className="bg-[#1A7F40] font-semibold md:h-[47px] hover:bg-green-700 text-white rounded-[13px] md:px-6">
 						<span className="">Nimm Kontakt auf</span>
@@ -36,14 +36,14 @@ export default function Home() {
 									alt=""
 									className="sm:-translate-y-2 shrink-0 sm:w-[80px] sm:h-[60px] lg:w-[90px] lg:h-[66px]"
 								/>
-								<span>braucht, schnell.</span>
+								<span>braucht!</span>
 							</span>
 						</h1>
 
 						<p className="text-black text-base lg:text-lg">
 							Finde die passenden Saiten und das richtige Zubehör für
-							deinen Tennisschläger, die zu deinem individuellen
-							Spielstil passen.
+							deinen Tennisschläger - passend zu deinem individuellen
+							Spielstil.
 						</p>
 
 						<div className="grid grid-cols-2 sm:grid-cols-3 gap-4 py-6">
@@ -89,7 +89,7 @@ export default function Home() {
 						</div>
 
 						<Button className="bg-[#1A1A1A] h-[47px] hover:bg-gray-800 text-white px-8 py-3 rounded-[13px]">
-							Schläger abstimmen
+							WhatsApp schreiben
 						</Button>
 					</div>
 					<Image
@@ -128,7 +128,7 @@ export default function Home() {
 								/>
 							</h2>
 							<p className="text-black lg:text-lg">
-								Hier ist, was wir anbieten, damit dein Schläger bis zum
+								Hier ist, was I anbieten, damit dein Schläger bis zum
 								Wochenende spielfertig ist und du ihn wieder liebst.
 							</p>
 
