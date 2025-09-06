@@ -14,7 +14,7 @@ export default function Home() {
 						Racket Service
 					</div>
 					<Button className="bg-[#1A7F40] font-semibold md:h-[47px] hover:bg-green-700 text-white rounded-[13px] md:px-6">
-						<span className="">Nimm Kontakt auf</span>
+						<span className="">Kontakt</span>
 						<Image src={"/contact.svg"} width={20} height={20} alt="" />
 					</Button>
 				</div>
@@ -89,7 +89,7 @@ export default function Home() {
 						</div>
 
 						<Button className="bg-[#1A1A1A] h-[47px] hover:bg-gray-800 text-white px-8 py-3 rounded-[13px]">
-							WhatsApp schreiben
+							Schreib mir
 						</Button>
 					</div>
 					<Image
@@ -128,12 +128,11 @@ export default function Home() {
 								/>
 							</h2>
 							<p className="text-black lg:text-lg">
-								Hier ist, was I anbieten, damit dein Schläger bis zum
-								Wochenende spielfertig ist und du ihn wieder liebst.
+								Mit diesen Dienstleistungen sorge ich dafür, dass dein Schläger für das nächste Spiel wieder perfekt ist!
 							</p>
 
 							<Button className="bg-[#1A7F40] w-[142px] h-[47px] hover:bg-green-700 text-white px-6 py-3 rounded-[13px]">
-								Ruf uns an <PhoneCall />
+								Ruf mich an <PhoneCall />
 							</Button>
 
 							<div className="grid md:hidden lg:grid gap-4 mt-3">
@@ -245,12 +244,10 @@ export default function Home() {
 					<div className="grid lg:grid-cols-2 gap-12 items-center">
 						<div className="space-y-6">
 							<h2 className="text-2xl md:text-3xl font-bold text-black">
-								Warum solltest du uns in Betracht ziehen?
+								Warum Racket Service?
 							</h2>
 							<p className="text-gray-600 lg:text-lg">
-								Wir machen deinen Schläger im Handumdrehen spielbereit,
-								damit du Spiele gewinnst. Das ist nur einer von vielen
-								Gründen, warum wir deine beste Wahl sind.
+								Ich mache deinen Schläger im Handumdrehen spielbereit, damit du deine Spiele gewinnst. Das ist nur einer von vielen Gründen, warum Racket Service die beste Wahl für dich ist.
 							</p>
 
 							<div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -263,9 +260,7 @@ export default function Home() {
 											Schnelle Bearbeitung
 										</h3>
 										<p className="text-xs text-[#1E1E1E]">
-											Der ultimative Schlägerservice für TC
-											Bernkastel-Kues, VfL Bernkastel und
-											Tennisvereine.
+											In zwei bis vier Tagen ist dein Schläger neu bespannt und wieder spielbereit.
 										</p>
 									</div>
 								</div>
@@ -293,9 +288,7 @@ export default function Home() {
 											Vom Club anerkannte Expertise
 										</h3>
 										<p className="text-xs text-[#1E1E1E]">
-											Der offizielle Schlägerservice für TC
-											Bernkastel-Kues, VfL Bernkastel und
-											Tennisvereine.
+											Racket Service ist der offizielle Bespanner vom TC Rorschach.
 										</p>
 									</div>
 								</div>
@@ -341,11 +334,11 @@ export default function Home() {
 
 					<div className="bg-white rounded-2xl p-5 lg:px-[68px] lg:py-[40] space-y-6 w-full max-w-[481px] flex flex-col justify-between z-20">
 						<h3 className="text-xl text-center md:text-start lg:text-2xl font-bold text-black mb-4 lg:px-5">
-							Buche ein 10-minütiges Einführungsgespräch.
+							Du benötigst mehr Infos?
 						</h3>
 
 						<Button className="w-full bg-[#1A7F40] hover:bg-green-700 text-white h-[50px] rounded-[13px] mb-4">
-							Ruf uns an <PhoneCall />
+							Schreib ein Whatsapp <PhoneCall />
 						</Button>
 
 						<div className="flex items-center justify-center w-full gap-2 text-sm text-gray-600 md:px-5">
@@ -383,7 +376,7 @@ export default function Home() {
 				<div className="container mx-auto px-4">
 					<div className="text-center space-y-4">
 						<div className="text-lg font-semibold text-gray-800">
-							Racket service
+							Racket Service
 						</div>
 
 						<div className="flex justify-center gap-4">
@@ -417,7 +410,7 @@ export default function Home() {
 						</div>
 
 						<p className="text-sm text-gray-500">
-							© 2025 - Alle Rechte vorbehalten.
+							Erstellt von Roxstein.ch © 2025 - Alle Rechte vorbehalten.
 						</p>
 					</div>
 				</div>
