@@ -379,36 +379,6 @@ export default function Home() {
 							Racket Service
 						</div>
 
-						<div className="flex justify-center gap-4">
-							<Link href={""} className="rounded-full bg-transparent">
-								<Image src="/mail.png" alt="" width={30} height={30} />
-							</Link>
-							<Link href={""} className="rounded-full bg-transparent">
-								<Image
-									src="/linkedin.png"
-									alt=""
-									width={30}
-									height={30}
-								/>
-							</Link>
-							<Link href={""} className="rounded-full bg-transparent">
-								<Image
-									src="/whatsapp.png"
-									alt=""
-									width={30}
-									height={30}
-								/>
-							</Link>
-							<Link href={""} className="rounded-full bg-transparent">
-								<Image
-									src="/facebook.png"
-									alt=""
-									width={30}
-									height={30}
-								/>
-							</Link>
-						</div>
-
 						<p className="text-sm text-gray-500">
 							Erstellt von Roxstein.ch © 2025 - Alle Rechte vorbehalten.
 						</p>
