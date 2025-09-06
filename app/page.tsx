@@ -355,7 +355,7 @@ export default function Home() {
 										Bevorzugst du lieber E-Mail?
 									</span>
 									<span className="w-fit text-[#1E1E1E]">
-										dennis.engelmann@gmail.com
+										robinho.engelburg@gmail.com
 									</span>
 								</div>
 								<Image
