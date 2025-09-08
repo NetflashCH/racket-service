@@ -13,9 +13,19 @@ export default function Home() {
 					<div className="text-lg font-semibold text-gray-800">
 						Racket Service
 					</div>
-					<Button className="bg-[#1A7F40] font-semibold md:h-[47px] hover:bg-green-700 text-white rounded-[13px] md:px-6">
-						<span className="">Kontakt</span>
-						<Image src={"/contact.svg"} width={20} height={20} alt="" />
+					<Button
+						asChild
+						className="bg-[#1A7F40] font-semibold md:h-[47px] hover:bg-green-700 text-white rounded-[13px] md:px-6"
+					>
+						<Link href={"https://wa.me/+41774245391"}>
+							<span className="">Kontakt</span>
+							<Image
+								src={"/contact.svg"}
+								width={20}
+								height={20}
+								alt=""
+							/>
+						</Link>
 					</Button>
 				</div>
 			</header>
@@ -88,8 +98,13 @@ export default function Home() {
 							</div>
 						</div>
 
-						<Button className="bg-[#1A1A1A] h-[47px] hover:bg-gray-800 text-white px-8 py-3 rounded-[13px]">
-							Schreib mir
+						<Button
+							className="bg-[#1A1A1A] h-[47px] hover:bg-gray-800 text-white px-8 py-3 rounded-[13px]"
+							asChild
+						>
+							<Link href={"https://wa.me/+41774245391"}>
+								Schreib mir
+							</Link>
 						</Button>
 					</div>
 					<Image
@@ -97,7 +112,7 @@ export default function Home() {
 						alt="Tennis player with racket"
 						width={300}
 						height={400}
-						className="mx-auto relative lg:h-screen w-auto rounded-lg z-10 object-cover  lg:translate-x-14 lg:-translate-y-20 lg:max-w-[100vw]"
+						className="mx-auto relative lg:h-screen w-auto rounded-lg z-10 object-cover  lg:translate-x-14 lg:-translate-y-20 lg:max-w-[100vw] pointer-events-none"
 					/>
 				</div>
 			</section>
@@ -131,8 +146,13 @@ export default function Home() {
 								Mit diesen Dienstleistungen sorge ich dafür, dass dein Schläger für das nächste Spiel wieder perfekt ist!
 							</p>
 
-							<Button className="bg-[#1A7F40] w-[142px] h-[47px] hover:bg-green-700 text-white px-6 py-3 rounded-[13px]">
-								Ruf mich an <PhoneCall />
+							<Button
+								asChild
+								className="bg-[#1A7F40] w-[142px] h-[47px] hover:bg-green-700 text-white px-6 py-3 rounded-[13px]"
+							>
+								<Link href={"https://wa.me/+41774245391"}>
+									Ruf mich an <PhoneCall />
+								</Link>
 							</Button>
 
 							<div className="grid md:hidden lg:grid gap-4 mt-3">
@@ -337,8 +357,13 @@ export default function Home() {
 							Du benötigst mehr Infos?
 						</h3>
 
-						<Button className="w-full bg-[#1A7F40] hover:bg-green-700 text-white h-[50px] rounded-[13px] mb-4">
-							Schreib ein Whatsapp <PhoneCall />
+						<Button
+							asChild
+							className="w-full bg-[#1A7F40] hover:bg-green-700 text-white h-[50px] rounded-[13px] mb-4"
+						>
+							<Link href={"https://wa.me/+41774245391"}>
+								Schreib ein Whatsapp <PhoneCall />
+							</Link>
 						</Button>
 
 						<div className="flex items-center justify-center w-full gap-2 text-sm text-gray-600 md:px-5">
